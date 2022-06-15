@@ -17,11 +17,11 @@ def main():
         print('Error: 0未満', file=sys.stderr)
         sys.exit(1)
 
-    print(sys.argv[1].format(str))
+    # print(sys.argv[1].format(str))
     # 引数が0以上の整数じゃなかった場合
     dt = datetime.datetime.fromtimestamp(int(sys.argv[1]))
-    print(dt)
-    print(dt.strftime('%Y-%m-%dT%H:%M:%S%z'))
+    # print(dt)
+    # print(dt.strftime('%Y-%m-%dT%H:%M:%S%z'))
 
     t_delta = datetime.timedelta(hours=9)
     JST = datetime.timezone(t_delta, 'JST')
@@ -30,4 +30,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    print("end")
+    # print("end")
